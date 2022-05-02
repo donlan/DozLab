@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="import_img">选择图片</string>
+    <string name="import_img_desc">选择一张图片并进行文本识别</string>
+    <string name="copy_result">复制全部</string>
+    <string name="no_recognition_result_tips">无文本识别结果</string>
+    <string name="recognition_label">文本识别</string>
+    <string name="recognition_accessiblity">浮窗模式</string>
+    <string name="recognition_overlay_permission_title">We need app Overlay permission to show a global action view.</string>
+    <string name="common_ok">OK</string>
+    <string name="common_goto_setting">Goto Setting</string>
+</resources>

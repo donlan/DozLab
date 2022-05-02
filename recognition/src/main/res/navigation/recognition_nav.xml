@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recognition_nav"
+    app:startDestination="@id/importImageRecognitionFragment">
+
+    <fragment
+        android:id="@+id/importImageRecognitionFragment"
+        android:name="com.dooze.recognition.ImportImageRecognitionFragment"
+        android:label="ImportImageRecognitionFragment" />
+</navigation>

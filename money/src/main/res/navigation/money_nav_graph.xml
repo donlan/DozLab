@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/money_nav_graph"
+    app:startDestination="@id/mainBillListFragment">
+
+    <fragment
+        android:id="@+id/mainBillListFragment"
+        android:name="com.dooze.money.MainBillListFragment"
+        android:label="main_bill_list_fragment"
+        tools:layout="@layout/main_bill_list_fragment">
+
+        <action
+            android:id="@id/addBillFragment"
+            app:destination="@id/addBillFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addBillFragment"
+        android:name="com.dooze.money.AddBillFragment"
+        android:label="add_bill_fragment"
+        tools:layout="@layout/add_bill_fragment" />
+</navigation>

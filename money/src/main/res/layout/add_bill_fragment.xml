@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".money.ui.AddBillFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTags"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/tvAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:hint="@string/amount"
+        android:minHeight="60dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/numOne"
+        app:layout_constraintEnd_toStartOf="@id/delete"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/delete"
+        style="@style/BillNumButton"
+        android:layout_width="wrap_content"
+        android:text="@string/backspace"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvAmount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tvAmount" />
+
+    <TextView
+        android:id="@+id/numOne"
+        style="@style/BillNumButton"
+        android:text="@string/num_one"
+        app:layout_constraintBottom_toTopOf="@id/numFour"
+        app:layout_constraintEnd_toStartOf="@id/numTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/numTwo"
+        style="@style/BillNumButton"
+        android:text="@string/num_two"
+        app:layout_constraintBottom_toTopOf="@id/numFour"
+        app:layout_constraintEnd_toStartOf="@id/numThree"
+        app:layout_constraintStart_toEndOf="@id/numOne" />
+
+    <TextView
+        android:id="@+id/numThree"
+        style="@style/BillNumButton"
+        android:text="@string/num_three"
+        app:layout_constraintBottom_toTopOf="@id/numFour"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numTwo" />
+
+
+    <TextView
+        android:id="@+id/numFour"
+        style="@style/BillNumButton"
+        android:text="@string/num_four"
+        app:layout_constraintBottom_toTopOf="@id/numSeven"
+        app:layout_constraintEnd_toStartOf="@id/numTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/numFine"
+        style="@style/BillNumButton"
+        android:text="@string/num_fine"
+        app:layout_constraintBottom_toTopOf="@id/numSeven"
+        app:layout_constraintEnd_toStartOf="@id/numThree"
+        app:layout_constraintStart_toEndOf="@id/numOne" />
+
+    <TextView
+        android:id="@+id/numSix"
+        style="@style/BillNumButton"
+        android:text="@string/num_six"
+        app:layout_constraintBottom_toTopOf="@id/numSeven"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numTwo" />
+
+
+    <TextView
+        android:id="@+id/numSeven"
+        style="@style/BillNumButton"
+        android:text="@string/num_seven"
+        app:layout_constraintBottom_toTopOf="@id/numZero"
+        app:layout_constraintEnd_toStartOf="@id/numTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/numEight"
+        style="@style/BillNumButton"
+        android:text="@string/num_eight"
+        app:layout_constraintBottom_toTopOf="@id/numZero"
+        app:layout_constraintEnd_toStartOf="@id/numThree"
+        app:layout_constraintStart_toEndOf="@id/numOne" />
+
+    <TextView
+        android:id="@+id/numNine"
+        style="@style/BillNumButton"
+        android:text="@string/num_nine"
+        app:layout_constraintBottom_toTopOf="@id/numZero"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numTwo" />
+
+
+    <TextView
+        android:id="@+id/numZero"
+        style="@style/BillNumButton"
+        android:text="@string/num_zero"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/numTwo"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/dot"
+        style="@style/BillNumButton"
+        android:text="@string/dot"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/numThree"
+        app:layout_constraintStart_toEndOf="@id/numOne" />
+
+    <TextView
+        android:id="@+id/done"
+        style="@style/BillNumButton"
+        android:text="@string/done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/numTwo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

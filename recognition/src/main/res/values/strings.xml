@@ -1,0 +1,11 @@
+<resources>
+    <string name="import_img">Import Image</string>
+    <string name="import_img_desc">Select a image to recognize</string>
+    <string name="copy_result">Copy All</string>
+    <string name="no_recognition_result_tips">No recognition resutls.</string>
+    <string name="recognition_label">Text Recognition</string>
+    <string name="recognition_accessiblity">Accessibility Mode</string>
+    <string name="recognition_overlay_permission_title">We need app Overlay permission to show a global action view.</string>
+    <string name="common_ok">OK</string>
+    <string name="common_goto_setting">Goto Setting</string>
+</resources>
